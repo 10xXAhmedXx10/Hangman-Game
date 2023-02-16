@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/theGame.css">
+  <title id="title">Document</title>
+</head>
+
+<body>
+
+  <div id="audio-player">
+    <audio id="audio" src="Wild Western Music  Tumbleweed Town.mp3"></audio>
+    <div id="controls">
+      <button id="play-btn">Play</button>
+      <button id="pause-btn">Pause</button>
+      <input type="range" id="volume-range" min="0" max="1" step="0.1" value="1">
+    </div>
+  </div>
+
+  <div>
+  <div id="timer"></div>
+</div>
+
+<div class="about-game">
+  <img src="https://m.media-amazon.com/images/I/41Kt59CjXmL.png" alt="Hangman">
+
+  <h1>Game Title</h1>
+  <p>welcome to the Hangman game you have to guess the letters to save the man</p>
+  <p class="note">Note: capital letters only</p>
+</div>
+
+    <div class="container">
+        <div class="game-box">
+          <svg class="figure">
+            <!-- Stand -->
+            <line x1="25%" y1="5%" x2="65%" y2="5%" />
+            <line x1="65%" y1="5%" x2="65%" y2="20%" />
+            <line x1="25%" y1="5%" x2="25%" y2="95%" />
+            <line x1="5%" y1="95%" x2="45%" y2="95%" />
+  
+            <!-- Head -->
+            <circle r="10%" cx="65%" cy="30%" class="body-part" />
+  
+            <!-- Body -->
+            <line x1="65%" y1="40%" x2="65%" y2="60%" class="body-part" />
+  
+            <!-- Arms -->
+            <line x1="50%" y1="40%" x2="65%" y2="50%" class="body-part" />
+            <line x1="80%" y1="40%" x2="65%" y2="50%" class="body-part" />
+  
+            <!-- Legs -->
+            <line x1="65%" y1="60%" x2="80%" y2="70%" class="body-part" />
+            <line x1="65%" y1="60%" x2="50%" y2="70%" class="body-part" />
+          </svg>
+
+
+          <div class="content">
+            <ul id="word" class="word"></ul>
+            <div id="wrong" class="wrong">
+              <h1>wrong words:</h1>
+              <p></p>
+            </div>
+          </div>
+
+
+          <div id="backdrop" class="backdrop"></div>
+          <div id="no-work" class="no-work">
+          </div>
+          <div id="final-msg" class="final-msg">
+            <p id="msg-info" class="msg-info"></p>
+            <button id="play" class="play">Play Again</button>
+          </div>
+          
+          <div id="indication" class="indication">
+            <p>You have inserted this letter &#9757 </p>
+          </div>
+        </div>
+      </div>
+
+
+        <button id="about">About</button>
+        <img id="game-img" src="addtext_com_MTY1NzEwMTE4ODI.jpg" alt="about">
+</body>
+
+
+<script src="js/app.js" type="text/javascript"></script>
+
+</html>
